@@ -41,52 +41,6 @@ HydroBot follows a perception → decision → action loop:
 6. System updates waste count and sensor data to IoT dashboard
 7. Robot returns to patrol mode
 
-## Repository Structure
-
-hydrobot/
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── .gitignore
-│
-├── docs/
-│   ├── system-overview.md
-│   ├── process-map.md
-│   ├── ai-pipeline.md
-│   ├── power-management.md
-│   ├── iot-dashboard.md
-│   └── limitations-and-future-work.md
-│
-├── hardware/
-│   ├── components-list.md
-│   ├── mechanical-overview.md
-│   └── wiring-overview.md
-│
-├── src/
-│   ├── main.py
-│   ├── config.py
-│   │
-│   ├── vision/
-│   │   └── yolov8_inference.py
-│   │
-│   ├── navigation/
-│   │   └── motor_control.py
-│   │
-│   ├── collection/
-│   │   └── intake_control.py
-│   │
-│   └── sensors/
-│       └── ultrasonic.py
-│
-├── iot/
-│   └── data_publisher.py
-│
-├── tests/
-│   └── motor_smoothing_test.py
-│
-└── assets/
-    └── demo.gif
-
 ---
 
 ## Hardware Platform (High-Level)
