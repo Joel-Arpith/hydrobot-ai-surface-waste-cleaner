@@ -1,0 +1,21 @@
+"""
+Motor control logic with smooth differential steering
+"""
+
+from config import BASE_SPEED, MAX_SPEED, STEERING_GAIN
+
+def navigate(offset):
+    """
+    Calculate left and right motor speeds based on target offset
+    """
+
+    left_speed = BASE_SPEED - (offset * STEERING_GAIN * BASE_SPEED)
+    right_speed = BASE_SPEED + (offset * STEERING_GAIN * BASE_SPEED)
+
+    left_speed = clamp(left_speed)
+    right_speed = clamp(right_speed)
+
+    print(f"[Motor] Left: {left_speed:.1f}, Right: {right_speed:.1f}")
+
+def clamp(speed):
+    return max(0, min(MAX_SPEED, speed))
