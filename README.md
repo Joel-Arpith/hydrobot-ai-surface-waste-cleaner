@@ -41,7 +41,87 @@ HydroBot follows a perception → decision → action loop:
 6. System updates waste count and sensor data to IoT dashboard
 7. Robot returns to patrol mode
 
----
-
 ## Repository Structure
 
+hydrobot/
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── .gitignore
+│
+├── docs/
+│   ├── system-overview.md
+│   ├── process-map.md
+│   ├── ai-pipeline.md
+│   ├── power-management.md
+│   ├── iot-dashboard.md
+│   └── limitations-and-future-work.md
+│
+├── hardware/
+│   ├── components-list.md
+│   ├── mechanical-overview.md
+│   └── wiring-overview.md
+│
+├── src/
+│   ├── main.py
+│   ├── config.py
+│   │
+│   ├── vision/
+│   │   └── yolov8_inference.py
+│   │
+│   ├── navigation/
+│   │   └── motor_control.py
+│   │
+│   ├── collection/
+│   │   └── intake_control.py
+│   │
+│   └── sensors/
+│       └── ultrasonic.py
+│
+├── iot/
+│   └── data_publisher.py
+│
+├── tests/
+│   └── motor_smoothing_test.py
+│
+└── assets/
+    └── demo.gif
+
+---
+
+## Hardware Platform (High-Level)
+
+- Raspberry Pi (AI inference and decision layer)
+- Arduino UNO (motor and sensor control)
+- Dual DC motors with motor driver
+- Ultrasonic sensors for obstacle avoidance
+- Solar panel with charge controller
+- Li-ion battery system
+- PVC twin-hull (catamaran) floating structure
+- Waste collection basket / net mechanism
+
+---
+
+## Installation & Setup (Reference)
+
+> This repository provides a reference implementation for academic and experimental use.
+
+```bash
+git clone https://github.com/your-username/hydrobot-ai-surface-waste-cleaner.git
+cd hydrobot
+pip install -r requirements.txt
+python src/main.py
+```
+## This repository:
+
+Demonstrates system architecture and control logic
+Is intended for learning, research, and prototyping
+
+## Team & Acknowledgements
+
+Developed as part of an Experimental Learning Project (ELP).
+Guided by academic supervision and inspired by sustainable development goals (SDG 14 – Life Below Water).
+
+## Contact
+
+For academic or collaboration-related queries, please open an issue in the repository.
