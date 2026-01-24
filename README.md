@@ -1,7 +1,7 @@
 # HydroBot 🌊🤖  
 AI-Powered Solar Autonomous Surface Water Waste Collection Robot
 
-HydroBot is an AI-driven, solar-powered autonomous surface water waste collection system designed for lakes, ponds, campus water bodies, and other small community-scale aquatic environments. The system combines real-time computer vision, autonomous navigation, a physical waste collection mechanism, and IoT-based environmental monitoring into a single modular robotic platform.
+HydroBot is a solar-powered, AI-enabled autonomous surface cleaning robot developed to collect floating waste from lakes, ponds, campus water bodies, and other small-scale community aquatic environments. It integrates real-time computer vision, autonomous navigation, a mechanical waste collection system, and IoT-based environmental monitoring into a single modular robotic platform.
 
 ---
 
